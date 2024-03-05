@@ -1,0 +1,318 @@
+@charset "utf-8";
+
+/*CSS of header */
+
+.main-div
+{
+    margin: 0;
+    padding: 0;
+}
+
+.ul01
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: #1c251f;
+    overflow: hidden;
+    padding: 5px 0;
+    width: 100%;
+    height: 50px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+.navbar .li01
+{
+    float: left;
+    margin-top: 10px;
+
+}
+
+.navbar a
+{
+    width: 70px;
+    height: 70px;
+    color: white;
+    text-decoration: none;
+    transition: 0.8s;
+    display: block;
+}
+
+.navbar a:hover
+{
+    opacity: .5;
+    color: #f5f5dc;
+}
+
+@media screen and (max-width: 600px)
+{
+    .navbar a {
+        display: none;
+    }
+    .navbar a.show {
+        display: block;
+    }
+}
+
+/*CSS external of side bar*/
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #3d444c; 
+}
+
+#container {
+    display: flex;
+    height: 100vh;
+
+}
+
+#navbar {
+    width: 200px;
+    background-color: #576d7a; 
+    color: #fff;
+    padding: 20px;
+    overflow: auto;
+}
+
+.h1S
+{
+    width: 80%;
+    color: #f5f5dc;
+    font-size: 25px;
+}
+
+.div-S
+{
+    border: 3px solid #f5f5dc;
+    height: 800px;
+}
+
+.ul-S
+{
+    margin: 0%;
+    padding: 0%;
+    list-style-type: none;
+    direction: rtl;
+}
+
+.li-S
+{
+    color: #f5f5dc;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    transition: all 0.8s;
+}
+
+.li-S:hover
+{
+    color: #f5f5dc;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background-color: #f5f5dc;
+}
+
+.a-S
+{
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    transition: all 0.5s;
+    display: block;
+}
+
+.a-S:hover
+{
+    text-align: center;
+    text-decoration: none;
+    color: #704332;
+    font-size: x-large;
+}
+
+.ol-S
+{
+    margin: 0%;
+    padding: 0%;
+    list-style-type: none;
+}
+
+.li-S01
+{
+    margin-top: 10px;
+    background-color: #f5f5dc;
+    height: 50px;
+}
+
+.li-S01:hover
+{
+    margin-top: 10px;
+    background-color: #f5f5dc;
+    height: 50px;
+}
+
+.a-S01
+{
+    text-decoration: none;
+    color: black;
+    padding-top: 15px;
+    display: block;
+    transition: 0.5s;
+
+}
+
+.a-S01:hover
+{
+    text-decoration: none;
+    color: #704332;
+    padding-top: 15px;
+    font-size: larger;
+}
+
+/*CSS external of article*/
+
+#content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.main-content
+{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 760px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+iframe
+{
+    width: 100%;
+    background-color: #f5f5dc;
+}
+
+
+
+
+
+
+
+
+
+
+/*CSS external of footer*/
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer .nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer .nav li {
+    margin: 0 10px;
+}
+
+.footer .nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 767.98px)
+    {
+        .footer .container
+{
+    flex-direction: column;
+    text-align: center;
+}
+
+    .footer .nav
+{
+    margin-top: 20px;
+}
+    }
+
+/*icons in footer*/
+
+.footer
+{
+background-color: #1c251f;
+color: gray;
+}
+
+.instagram-icon {
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: gray;
+    text-align: center;
+    line-height: 32px;
+    transition: all 0.3s ease;
+}
+
+.instagram-icon:hover {
+    background-color: #3f729b;
+    color: #fff;
+}
+
+.instagram-icon i {
+    font-size: 1.25rem;
+    color: #3f729b;
+}
+
+i img
+{
+    width: 100%;
+    mix-blend-mode: color-burn;
+    object-fit: contain;
+}
+
+@media (max-width: 767.98px) {
+    .instagram-icon {
+width: 35px;
+height: 35px;
+line-height: 35px;
+    }
+
+    .instagram-icon i {
+font-size: 1rem;
+    }
+}
+
+
